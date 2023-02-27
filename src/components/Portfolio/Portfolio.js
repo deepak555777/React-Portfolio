@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import './Portfolio.css'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
+import ProjectItem from './ProjectItem'
 
 
 const DUMMY_DATA=[{
@@ -62,20 +63,10 @@ function Portfolio() {
             />
         </div>
         <div className="projects">
-            { DUMMY_DATA.map((project)=>(
-                <div className="project">
-                <div className="project-img">
-                   <img src={project.Img} alt="project-img"></img>
-                </div>
-                <div className="project-heading">
-                 <h3>{project.Name}</h3>
-                </div>
-                <div className="project-description">
-                <p>{project.Description}</p> 
-                </div>
-            </div>
-            ))}
-            </div>
+    {DUMMY_DATA.map((project)=>[
+        <ProjectItem id={project.id} Name={project.Name} Description={project.Description} Img={project.Img} />
+    ])}
+    </div>
     </div>
     <Loader type="pacman" />
     </>

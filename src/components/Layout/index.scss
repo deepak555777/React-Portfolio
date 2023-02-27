@@ -117,13 +117,13 @@
 @media screen and (max-width: 1200px) {
   .page {
     position: initial;
+    overflow:hidden;
   }
 
   .container {
     position: initial;
-    height: auto;
-    min-height: auto;
-
+    width:auto;
+    margin:auto;
     &.contact-page,
     &.about-page,
     &.portfolio-page {

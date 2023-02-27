@@ -23,6 +23,9 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
+      <div className="resume-btnDiv">
+          <a href="https://drive.google.com/file/d/1MdsOB9NLWXLRMLLLsbA3mI-GgK61I1DW/view?usp=share_link" className="resume-btn">Resume</a>
+        </div>
       <Link 
         className="logo"
         to="/"
@@ -30,6 +33,7 @@ const Sidebar = () => {
         
         <img className="sub-logo" src={LogoSubtitle} alt="deepak" />
       </Link>
+      
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
           exact="true"

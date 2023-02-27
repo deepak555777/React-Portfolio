@@ -1,4 +1,5 @@
 .home-page {
+  position:relative;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -15,6 +16,7 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
+   
 
     &:before {
       content: '<h1>';
@@ -79,7 +81,9 @@
     }
   }
 }
-
+.round-img{
+  visibility: hidden;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -88,15 +92,22 @@
   .home-page h1:after {
     display: none;
   }
-
+.container{
+  position:relative;
+}
   .home-page .text-zone {
-    position: initial;
+    position: absolute;
     width: 100%;
     transform: none;
     padding: 10px;
     box-sizing: border-box;
+    bottom:2%;
+    left:2%;
   }
-
+.img{
+  position:absolute;
+  top:3% ;
+}
   .home-page .flat-button {
     float: none;
     display: block;
@@ -122,5 +133,22 @@
     bottom: auto;
     left: 0;
     margin: auto;
+  }
+  .flat-button{
+   visibility:hidden;
+  }
+  h1{
+    text-align:center;
+  }
+  .round{
+    text-align:center;
+   // border:2px solid white;
+  }
+  .round-img{
+    visibility: visible;
+    width:40%;
+    height:40%;
+    border:4px solid white;
+    border-radius: 50%;
   }
 }

@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
 import './index.scss'
+import roundImg from '../../assets/images/Deepak 2.png'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,7 +24,6 @@ const Home = () => {
     'p',
     'e',
     'r',
-    '.',
   ]
 
   useEffect(() => {
@@ -35,10 +35,13 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+        <div className="round">
+          <img src={roundImg} className="round-img" alt="round-img"></img>
+        </div>
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
+            <span className={`${letterClass} _12`}>i</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
@@ -54,7 +57,6 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Web Developer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

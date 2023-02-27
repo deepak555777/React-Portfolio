@@ -6,3 +6,8 @@
   top: 10%;
   right: 13%;
 }
+@media( max-width : 1200px){
+  .logo-container{
+    visibility: hidden;
+  }
+}

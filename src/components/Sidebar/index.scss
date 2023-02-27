@@ -134,7 +134,13 @@
 .hamburger-icon, .close-icon {
   display: none;
 }
-
+.resume-btnDiv{
+  display:flex;
+  text-align: center;
+ }
+ .resume-btn{
+  border: 2px solid white;
+ }
 
 @media screen and (max-width: 1200px) {
   .nav-bar { 
@@ -142,11 +148,12 @@
     position: initial;
     height: auto;
     min-height: auto;
-
      ul, nav {
       display: none;
      }
-
+     .logo{
+      visibility:hidden;
+    }
      nav {
       width: 100%;
       top: 0;
@@ -187,4 +194,20 @@
         display: block;
      }
   }
+
+ .resume-btnDiv{
+  margin-top : 1rem;
+ }
+ .resume-btn{
+  border: 2px solid white;
+  border-radius:5px;
+  padding:9px 18px;
+  background-color:rgb(225, 192, 72);
+  font-size:1.5rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  color:black;
+  text-transform: uppercase;
+  text-decoration:none;
+ }
 }
